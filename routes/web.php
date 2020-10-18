@@ -54,3 +54,15 @@ Route::get('/view/post/{id}', 'PostController@Viewpost');
 Route::get('/edit/post/{id}', 'PostController@Editpost');
 Route::post('/update/post/{id}', 'PostController@Updatepost');
 Route::get('/delete/post/{id}', 'PostController@Deletepost');
+
+//Student route
+Route::get('/student', 'StudentController@index')->name('student');
+Route::post('/student/insert', 'StudentController@insert')->name('store.student');
+Route::get('all/student', 'StudentController@ViewAllStudent')->name('all.student');
+Route::get('view/student/{id}', 'StudentController@ViewStudent');
+Route::get('/delete/student/{id}', 'StudentController@destroy');
+Route::get('/edit/student/{id}', 'StudentController@Editstudent');
+Route::post('/update/student/{id}', 'StudentController@update');
+
+//Employee {using resource route}
+Route::resource('employee', 'EmployeeController');

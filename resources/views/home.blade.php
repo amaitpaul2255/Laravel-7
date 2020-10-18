@@ -47,6 +47,12 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('maxsop/contact')}}">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('all.student')}}">Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ URL::to('employee')}}">employee</a>
+          </li>
         </ul>
       </div>
     </div>
